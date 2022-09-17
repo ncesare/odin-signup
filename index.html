@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container" id="banner">
+        <div><h1><img src="images/odin-lined.png">Odin</h1></div>
+        <img src="images/leaves-image.jpg" alt="Leaves in a forest">
+    </div>
+    <div class="container">
+        <div id="pitch">
+            <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+            <div>Sign up <em>now</em> to get started.</div>
+            <div>You <em>know</em> you want to.</div>
+        </div>
+        <div id="form-container">
+            <form action="actionhere" method="post">
+                <div class="column">
+                    <div class="input-container">
+                    <label for"first-name">FIRST NAME</label>
+                    <input type="text" id="first-name">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-container">
+                        <label for"last-name">LAST NAME</label>
+                        <input type="text" id="last-name">
+                    </div>
+                    <div class="input-container">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="input-container">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="btn-container">
+            <button type="button">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
