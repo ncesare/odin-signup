@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container" id="banner">
-        <div><h1><img src="images/odin-lined.png">Odin</h1></div>
+        <div><img src="images/odin-lined.png"><h1>Odin</h1></div>
         <img src="images/leaves-image.jpg" alt="Leaves in a forest">
     </div>
     <div class="container">
@@ -22,31 +22,43 @@
         <div id="form-container">
             <form action="actionhere" method="post">
                 <div class="column">
-                    <div class="input-container">
-                    <label for"first-name">FIRST NAME</label>
-                    <input type="text" id="first-name">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Thor">
                     </div>
-                    <div class="input-container">
+                    <div>
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email">
                     </div>
-                    <div class="input-container">
+                    <div>
                         <label for="password">PASSWORD</label>
                         <input type="password" name="password" id="password">
                     </div>
+                    <div>
+                        <label for="birthday">BIRTHDAY</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
                 </div>
                 <div class="column">
-                    <div class="input-container">
-                        <label for"last-name">LAST NAME</label>
-                        <input type="text" id="last-name">
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Odinson">
                     </div>
-                    <div class="input-container">
+                    <div>
                         <label for="phone">PHONE NUMBER</label>
                         <input type="text" name="phone" id="phone">
                     </div>
-                    <div class="input-container">
+                    <div>
                         <label for="confirm-password">CONFIRM PASSWORD</label>
                         <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                    <div>
+                        <label for="account-type">ACCOUNT</label>
+                        <select name="Account" id="account-type">
+                            <option value="free">Free -- $0.00</option>
+                            <option value="basic">Basic -- $9.99</option>
+                            <option value="premium">Premium -- $14.99</option>
+                        </select>
                     </div>
                 </div>
             </form>
